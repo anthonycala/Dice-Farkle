@@ -1,10 +1,8 @@
 function runGame() {
 	
 	let playerScore = 0;
-
-	// for
+	alert("How to Score:\n1-2-3-4-5-6 = 3000 Points\nThree 1's = 1000 Points\nThree 4's = 400 Points\nThree 3's = 300 Points\nThree 2's = 200 Points");
 	
-	//
 	for (let i=0; i<35; i++){
 		let roll1 = rollDie(6);
 		let roll2 = rollDie(5);
@@ -16,8 +14,8 @@ function runGame() {
 			playerScore += determinePointsEarned(playerRollResults);
 			console.log(playerScore)
 			if (i === 34){	
-				console.log("Your Final Score is " + playerScore)
-			} ///console.log(" Total Points Earned " + playerScore)
+				alert("Your Final Score is " + playerScore) 
+			} 
 		}
 	}
 
@@ -84,26 +82,6 @@ function rollDie(numberOfSides){
 	console.log(iRollDice);
 	return iRollDice 
 }
+
 runGame();
 
-// 1-2-3-4-5-6 = 3000 Points
-// Three 1's = 1000 Points
-// Three 4's = 400 Points
-// Three 3's = 300 Points
-// Three 2's = 200 Points
-
-
-
-// let	iRandomNumber;
-	// let iRollDice;
-	// let i;
-
-	// iRollDice = prompt("How many times do you want to roll the dice?", 5);
-
-
-
-// for (i=1; i<=iRollDice; i++){
-// iRandomNumber = Math.ceil(Math.random()*6);
-// document.writeIn(iRandomNumber+"<br>");
-// }
-// document.writeIn("----Finished ----")
